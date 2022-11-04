@@ -1,0 +1,47 @@
+.list{
+    text-align: center;
+    padding-top: 40px;
+    .list__line{
+        display: inline-block;
+        margin: 0 auto;
+        width: 140px;
+        border: 1px solid #DBDBDB;
+    }
+
+    .list__text{
+        position: relative;
+        padding: 43px 0 35px 0;
+        margin-left: 313px;
+        width: 753px;
+        @include font(normal , 400 , 20px , 26px , #949494);
+        
+        &::after{
+            position: absolute;
+            right: -100px;
+            top: -10px;
+            width: 142px;
+            height: 128px;
+            content: "";
+            display: inline-block;
+            background: url("/images/list_nail.svg") right bottom no-repeat;
+        }
+
+        &::before{
+            position: absolute;
+            left: -190px;
+            top: -65px;
+            transform: rotate(-180deg);
+            width: 142px;
+            height: 128px;
+            content: "";
+            display: inline-block;
+            background: url("/images/list_nail.svg") left top no-repeat;
+        }
+    }
+
+    .list__bottom{
+        margin-top: 35px;
+        display: block;
+        @include font(normal , 500 , 20px , 26px , #333333);
+    }
+}

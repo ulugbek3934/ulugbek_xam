@@ -1,0 +1,101 @@
+.about{
+    margin-top: 216px;
+    .about__title{
+        text-align: center;
+        margin: 0;
+        @include font(normal , 700 , 48px , 20px , #333333);
+    }
+}
+
+.about__list{
+    @include row;
+    margin-top: 80px;    
+    justify-content: space-between;
+    .about__date{
+        position: relative;
+        margin: 0;
+        margin-top: 21px;
+        margin-left: 212px;
+        @include font(normal , 500 , 14px , 18px , #949494);
+        &:nth-child(4){
+            position: absolute;
+            right: 0;
+            top: -17px;
+        }
+    }
+
+    .about__caption{
+        margin: 0;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        @include font(normal , 700 , 22px , 25px , #000000);
+    }
+
+    .about__text{
+        margin: 0;
+        width: 250px;
+        margin-left: 30px;
+        margin-bottom: 37px;
+        @include font(normal , 400 , 16px , 20px , #949494);
+    }
+    
+    .about__link{
+        position: relative;
+        margin-left: 50px;
+        @include font(normal , 500 , 16px , 21px , #333333);
+        &::before{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -30px;
+            width: 28px;
+            height: 25px;
+            content: "";
+            display: inline-block;
+            background: url("/images/header-paw.svg") no-repeat;
+        }
+    }
+}
+
+.about__middle{
+    position: relative;
+}
+
+.about__item{
+    background: #FEFEFE;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+    
+        &:nth-child(2){
+            @include row;
+    }
+        &:nth-child(1){
+            padding-top: -2px;
+            padding-bottom: 20px;
+        }
+        &:nth-child(3){
+            padding-bottom: 38px;
+        }
+
+    &:hover{
+        background: #FEFEFE;
+        border: 1px solid #E4E4E2;
+        border-radius: 5px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &:active{
+        background: #FFFFFF;
+        border: 1px solid #F3F3F3;
+        border-radius: 5px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30));
+    }
+}
+
+.about__heshteg{
+    margin-right: 7px;
+    margin-top: 10px;
+    @include font(normal , 400 , 14px , 22px , #3D9CEA);
+    &:nth-child(1){
+        margin-left: 30px;
+    }
+}

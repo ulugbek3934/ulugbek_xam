@@ -1,0 +1,122 @@
+.services__title{
+    margin: 0;
+    padding-top: 191px;
+    @include row;   
+    justify-content: center;
+    @include font(normal , 700 , 48px , 54px , #333333);
+}
+
+.services__list{
+    position: relative;
+    @include row;
+    justify-content: center;
+    margin-top: 80px;
+    
+    .services__item{
+        text-align: center;
+        width: 193px;
+        height: 201px;
+        padding-top: 30px;
+        margin-left: 13px;
+        background: #ffffff;
+        border: 1px solid #F3F3F3;
+        border-radius: 5px;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:hover{
+            opacity: 0.8;
+        }
+        &:active{
+            opacity: 0.6;
+        }
+    }
+}
+
+.services__content{
+    @include row;
+    margin-top: 14px;
+    background: #ffffff;
+    padding: 42px 105px 43px 35px;
+}
+
+.content__list{
+    margin-left: 67px;
+    .content__title{
+        margin: 0;
+        @include font(normal , 500 , 36px , 20px , #333333);
+    }
+
+    .contect__text{
+        margin: 0;
+        width: 492px;
+        margin-bottom: 49px;
+        &:nth-child(2){
+            margin-top: 18px;
+            margin-bottom: 9px;
+        }
+        @include font(normal , 400 , 16px, 20px , #949494);
+
+    }
+
+    .content__link{
+        position: relative;
+        padding: 15px 36px 16px 63px;
+        background: #FFBD54;
+        border-radius: 3px;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+        @include font(normal , 500 , 16px , 21px , #ffffff);
+        &::before{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 35px;
+            width: 21px;
+            height: 21px;
+            content: "";
+            display: inline-block;
+            background: url("/images/service-price.svg") left no-repeat;
+            
+        }
+        &:hover{
+            background: #333333;
+            color: #FFBD54;
+        }
+        &:active{
+            opacity: 0.6;
+        }
+    }
+
+    .content__coment{
+        position: relative;
+        padding: 15px 37px 14px 64px;
+        margin-left: 21px;
+        background: #333333;
+        left: 35px;
+        border-radius: 3px;
+        @include font(normal , 500 , 16px , 21px , #ffffff);
+
+        &:hover{
+            background: #FFBD54;
+            color: #333333;
+        }
+
+        &:active{
+            opacity: 0.8;
+        }
+
+
+        &::before{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 21px;
+            height: 21px;
+            content: "";
+            display: inline-block;
+            background: url("/images/services-document.svg") left no-repeat;
+            left: 35px;
+        }
+    }
+}

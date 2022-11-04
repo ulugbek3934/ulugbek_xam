@@ -1,0 +1,44 @@
+.main__hero{
+    position: relative;
+    background: url("/images/hero-background.png") center no-repeat;
+}
+
+.hero{
+    padding: 230px 0 290px 0;
+    left: auto;
+    right: 0;
+    width: 608px;
+    margin-left: auto;
+
+    .hero__title{
+        margin: 0;
+        @include font(normal , 700 , 70px , 64px , #333333);
+        .hero__style{
+            color: #78C0DE;
+        }
+    }
+
+    .hero__text{
+        width: 495px;
+        margin: 0;
+        margin-bottom: 38px;
+        margin-top: 29px;
+        @include font(normal , 400 , 16px , 21px , #949494);
+    }
+
+    .hero__link{
+        margin-bottom: 321px;
+        padding: 15px 48px 16px 47px;
+        background-color: #333333;
+        @include font(normal , 500 , 16px , 21px , #ffffff);
+        border-radius: 3px;
+        transition: all 0.2s;
+        &:hover{
+            background: #FFBD54;
+            color: #333333;
+        }
+        &:active{
+            opacity: 0.6;
+        }
+    }
+}
